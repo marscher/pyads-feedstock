@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/stlehmann/{{ name }}/releases/download/{{ version }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d345baeb2cc7da1ce43fd40642ed2bbf2253dcb8d12f79b156411d80434b34e8
+  sha256: 94f0497ec1a522ae2a6d8484b7f81c9ee9adc3f8364091b19080b499c7053987
 
 build:
   number: 1
