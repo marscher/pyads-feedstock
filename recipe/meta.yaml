@@ -1,5 +1,5 @@
 {% set name = "pyads" %}
-{% set version = "3.3.4" %}
+{% set version = "3.3.9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,16 +7,17 @@ package:
 
 source:
   url: https://github.com/stlehmann/{{ name }}/releases/download/{{ version }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 94f0497ec1a522ae2a6d8484b7f81c9ee9adc3f8364091b19080b499c7053987
+  sha256: d69e5d4bf227adabc3d2e25877a3e2fbfc2644d7057719b3cc765115581ca15d
 
 build:
-  number: 2
+  number: 0
   script: "{{ PYTHON }} -m pip install . -vv"
   skip: True  # [py<36]
 
 requirements:
   build:
     - {{ compiler('cxx') }}
+    - make
   host:
     - python
     - pip
